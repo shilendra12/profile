@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Polyfills"
-date:   2015-10-26 16:51:11
+date:   2020-4-6 16:51:11
 categories: blog
 ---
 
@@ -32,7 +32,8 @@ Map
       return arr;
   }
 ```
-  
+Filter
+``` javascript
   Array.prototype.myFilter = function(cb, thisArg){
       if(typeof cb !== 'function'){
         throw('not a function')
@@ -45,7 +46,11 @@ Map
       }
       return arr;
   }
+```
 
+Reduce
+
+```javascript
   Array.prototype.myReduce = function(cb, thisArg){
       if(typeof cb !== 'function'){
         throw('not a function')
@@ -64,3 +69,4 @@ Map
       }
       return acc;
   }
+```
