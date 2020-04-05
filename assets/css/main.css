@@ -1080,6 +1080,10 @@ footer {
     padding-top: 0px;
     padding-bottom: 0px;
     color: #303e49; }
+  .cd-timeline-content h3 {
+    font-size: 16px;
+    text-align: right;
+  }
   .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 13px;
     font-size: 0.8125rem; }
