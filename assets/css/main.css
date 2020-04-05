@@ -739,6 +739,8 @@ footer {
       margin: auto;
       border-radius: 60%;
       background: url(../img/download.png) no-repeat; }
+      background-position-x: center;
+      background-size: cover;
     .about-lock .face1-img {
       height: 180px;
       width: 180px;
