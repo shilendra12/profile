@@ -738,7 +738,7 @@ footer {
       display: flex;
       margin: auto;
       border-radius: 60%;
-      background: url(../img/download.JPG) no-repeat; }
+      background: url(../img/download.png) no-repeat; }
     .about-lock .face1-img {
       height: 180px;
       width: 180px;
@@ -861,7 +861,15 @@ footer {
       color: #303e49;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      margin-left: 0; } }
+      margin-left: 0; 
+  }
+  .about-lock .face-img{
+    margin: auto;
+  }
+  .about-lock .face1-img{
+    margin: auto;
+  }
+}
 
 @media only screen and (min-width: 1070px) {
   .about-lock {
