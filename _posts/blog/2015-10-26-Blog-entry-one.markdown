@@ -4,6 +4,8 @@ title:  "Polyfills"
 date:   2015-10-26 16:51:11
 categories: blog
 ---
+
+ForEach
 ```javascript
 Array.prototype.myForEach = function(cb, thisArg){
       if(typeof cb !== 'function'){
@@ -13,9 +15,10 @@ Array.prototype.myForEach = function(cb, thisArg){
       for(var i = 0; i < this.length; i++){
        cb.call(thisArg, this[i], i, this);
       }
-  }```
-
-
+  }
+```
+Map
+```javascript
   Array.prototype.myMap = function(cb, thisArg){
       if(typeof cb !== 'function'){
         throw('not a function')
@@ -28,6 +31,7 @@ Array.prototype.myForEach = function(cb, thisArg){
       }
       return arr;
   }
+```
   
   Array.prototype.myFilter = function(cb, thisArg){
       if(typeof cb !== 'function'){
