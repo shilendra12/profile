@@ -1,4 +1,3 @@
-name: Gearoid O'Connor
-markdown: redcarpet
+name:Shilendra Yadav
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 baseurl: "/profile"
