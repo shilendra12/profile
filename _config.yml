@@ -1,3 +1,4 @@
-name:Shilendra Yadav
+name: Shilendra Yadav
+markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 baseurl: "/profile"
