@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Polyfills.markdown"
+title:  "Polyfills"
 date:   2020-4-6 16:51:11
 categories: blog
 ---
-
 ForEach
 ```javascript
 Array.prototype.myForEach = function(cb, thisArg){
@@ -17,6 +16,7 @@ Array.prototype.myForEach = function(cb, thisArg){
       }
   }
 ```
+
 Map
 ```javascript
   Array.prototype.myMap = function(cb, thisArg){
@@ -32,7 +32,9 @@ Map
       return arr;
   }
 ```
+
 Filter
+
 ``` javascript
   Array.prototype.myFilter = function(cb, thisArg){
       if(typeof cb !== 'function'){
@@ -49,7 +51,6 @@ Filter
 ```
 
 Reduce
-
 ```javascript
   Array.prototype.myReduce = function(cb, thisArg){
       if(typeof cb !== 'function'){
@@ -69,4 +70,32 @@ Reduce
       }
       return acc;
   }
+```
+
+Debounce
+```
+var myDebounce = (cb, wait) => {
+  let timeInterval;
+  return function (...args){
+    let context = this;
+    clearInterval(timeInterval);
+    timeInterval = setTimeout(cb.apply(context,args),wait);
+  }
+}
+```
+
+Throttle 
+
+```
+var myThrottle = (cb, wait) => {
+  let interval;
+  return function (...args){
+    let context = this;
+    if(!interval){ 
+      cb.apply(context, args);
+      interval = true
+      setTimeout(() => interval = false, wait)
+    }
+  }
+}
 ```
